@@ -1,18 +1,155 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/colorTeal"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
     tools:context="com.jjent.buddytalk.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/oval_ivory"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"/>
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_account_circle"
+            android:layout_marginRight="10dp"/>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="E-mail Address"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/colorIvory"
+            android:textColor="@color/colorIvory"
+            android:textSize="18sp"
+            android:textCursorDrawable="@drawable/cursor_login"
+            app:met_baseColor="@color/colorIvory"
+            app:met_floatingLabelTextColor="#fffffff0"
+            app:met_underlineColor="@color/colorIvory"
+            app:met_hideUnderline="true"
+            app:met_floatingLabel="normal"
+            app:met_singleLineEllipsis="true"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_lock_outline"
+            android:layout_marginRight="10dp"/>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColorHint="@color/colorIvory"
+            android:textColor="@color/colorIvory"
+            android:textSize="18sp"
+            android:textCursorDrawable="@drawable/cursor_login"
+            app:met_baseColor="@color/colorIvory"
+            app:met_floatingLabelTextColor="#fffffff0"
+            app:met_underlineColor="@color/colorIvory"
+            app:met_floatingLabel="normal"
+            app:met_hideUnderline="true"
+            app:met_singleLineEllipsis="true"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="로그인"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/colorTeal"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/selector_rc_2dp_ivory"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:padding="8dp"
+            android:text="회원가입"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/colorTeal"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/selector_rc_2dp_ivory"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:textColor="@drawable/selector_text_ivory"
+            android:textSize="16sp"
+            android:text="아이디 분실"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorIvory"
+            android:textSize="16sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="/"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:textColor="@drawable/selector_text_ivory"
+            android:textSize="16sp"
+            android:text="비밀번호 분실"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
